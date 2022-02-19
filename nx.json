@@ -1,0 +1,35 @@
+{
+	"implicitDependencies": {
+		"package.json": {
+			"dependencies": "*",
+			"devDependencies": "*"
+		},
+		".eslintrc.json": "*"
+	},
+	"affected": {
+		"defaultBase": "master"
+	},
+	"npmScope": "bp",
+	"tasksRunnerOptions": {
+		"default": {
+			"runner": "@nrwl/workspace/tasks-runners/default",
+			"options": {
+				"cacheableOperations": ["build", "lint"]
+			}
+		}
+	},
+	"projects": {
+		"line-chart-models": {
+			"tags": []
+		},
+		"line-chart-services": {
+			"tags": []
+		},
+		"task": {
+			"tags": []
+		},
+		"weather-forecast-services": {
+			"tags": []
+		}
+	}
+}
