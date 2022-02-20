@@ -1,0 +1,13 @@
+label {
+	float: left;
+}
+input {
+	float: right;
+	&[type="text"] {
+		min-height: 20px;
+		border: solid 1px #0094ba;
+		border-radius: 3px;
+	}
+}
+
+

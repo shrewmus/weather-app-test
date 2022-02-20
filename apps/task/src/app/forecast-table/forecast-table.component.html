@@ -1,0 +1,11 @@
+<ng-container *ngIf='selectedCity$ | async'>
+	<h3>Forecast for {{(selectedCity$ | async)?.name}} {{(selectedCity$ | async)?.country}} (<span class='letter'>{{selectedMode$ | async}}</span>)</h3>
+	<table *ngIf='(selectData$ | async) as weather'>
+		<tr>
+			<th *ngFor='let forecast of weather[0]?.data'>{{formatTime(selectedMode$ | async, forecast.dt)}}</th>
+		</tr>
+		<tr>
+			<td *ngFor='let forecast of weather[0]?.data'>{{forecast.temp}}</td>
+		</tr>
+	</table>
+</ng-container>

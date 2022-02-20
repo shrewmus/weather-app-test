@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.col {
+	padding: 2px 4px;
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	padding: 1px;
+	border: solid 1px dimgray;
+	margin: 2px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: all .5s;
+	background-color: transparent;
+	&:hover {
+		background-color: dimgray;
+		color: white;
+	}
+}
+
+.letter {
+	text-transform: capitalize;
+}
